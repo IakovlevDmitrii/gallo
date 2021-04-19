@@ -9,21 +9,18 @@ import slidersData from '../../services/sliders-data/sliders-data';
 
 import './app.css';
 
-const App = () => {
-  const topSliderSlides = slidersData.getTopSliderData();
-  const bottomSliderSlides = slidersData.getBottomSliderData();
-
+function App() {
   return (
     <>
       <Header/>
       <div className='main'>
-        <Slider slidesList={topSliderSlides} />
-        <Slider slidesList={bottomSliderSlides} />
+        <Slider slidesList={slidersData.getTopSliderData()} />
+        <Slider slidesList={slidersData.getBottomSliderData()} />
       </div>
       <Menu/>
       <Footer/>
     </>
   )
-};
+}
 
 export default App;

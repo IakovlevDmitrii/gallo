@@ -10,10 +10,12 @@ import bottomSliderFive from './images/bottom-slider/strada-2.jpg';
 import bottomSliderSix from './images/bottom-slider/PROFILESUBx2.jpg';
 
 class SlidersData {
+  baseUrl = 'https://gallo.pult.ru/';
+
   topSliderData = [
     {
       id: 1,
-      href: 'https://gallo.pult.ru/micro#productPagePart',
+      href: `${this.baseUrl}micro#productPagePart`,
       alt: 'Micro_micro-se',
       source: topSliderOne,
       whiteText: 'побалуй ',
@@ -23,7 +25,7 @@ class SlidersData {
     },
     {
       id: 2,
-      href: 'https://gallo.pult.ru/micro_droplet#productPagePart',
+      href: `${this.baseUrl}micro_droplet#productPagePart`,
       alt: 'droplet',
       source: topSliderTwo,
       whiteText: 'Давай ',
@@ -33,7 +35,7 @@ class SlidersData {
     },
     {
       id: 3,
-      href: 'https://gallo.pult.ru/subwoofers#productPagePart',
+      href: `${this.baseUrl}subwoofers#productPagePart`,
       alt: 'Micro_micro-se',
       source: topSliderThree,
       whiteText: 'держаться ',
@@ -50,7 +52,7 @@ class SlidersData {
   bottomSliderData = [
     {
       id: 1,
-      href: 'https://gallo.pult.ru/micro#productPagePart',
+      href: `${this.baseUrl}micro#productPagePart`,
       alt: 'Micro_micro-se',
       source: bottomSliderOne,
       discount: '30%',
@@ -58,7 +60,7 @@ class SlidersData {
     },
     {
       id: 2,
-      href: 'https://gallo.pult.ru/micro_se#productPagePart',
+      href: `${this.baseUrl}micro_se#productPagePart`,
       alt: 'Micro_micro-se',
       source: bottomSliderTwo,
       discount: '30%',
@@ -66,7 +68,7 @@ class SlidersData {
     },
     {
       id: 3,
-      href: 'https://gallo.pult.ru/micro_droplet#productPagePart',
+      href: `${this.baseUrl}micro_droplet#productPagePart`,
       alt: 'Micro_micro-se',
       source: bottomSliderThree,
       discount: '30%',
@@ -74,7 +76,7 @@ class SlidersData {
     },
     {
       id: 4,
-      href: 'https://gallo.pult.ru/micro_se_droplet#productPagePart',
+      href: `${this.baseUrl}micro_se_droplet#productPagePart`,
       alt: 'Micro_micro-se',
       source: bottomSliderThree,
       discount: '30%',
@@ -82,7 +84,7 @@ class SlidersData {
     },
     {
       id: 5,
-      href: 'https://gallo.pult.ru/adiva_droplet#productPagePart',
+      href: `${this.baseUrl}adiva_droplet#productPagePart`,
       alt: 'Micro_micro-se',
       source: bottomSliderThree,
       discount: '30%',
@@ -90,7 +92,7 @@ class SlidersData {
     },
     {
       id: 6,
-      href: 'https://gallo.pult.ru/adiva_se_droplet#productPagePart',
+      href: `${this.baseUrl}adiva_se_droplet#productPagePart`,
       alt: 'Micro_micro-se',
       source: bottomSliderThree,
       discount: '30%',
@@ -98,7 +100,7 @@ class SlidersData {
     },
     {
       id: 7,
-      href: 'https://gallo.pult.ru/adiva#productPagePart',
+      href: `${this.baseUrl}adiva#productPagePart`,
       alt: 'Micro_micro-se',
       source: bottomSliderFour,
       discount: '30%',
@@ -106,7 +108,7 @@ class SlidersData {
     },
     {
       id: 8,
-      href: 'https://gallo.pult.ru/adiva_se#productPagePart',
+      href: `${this.baseUrl}adiva_se#productPagePart`,
       alt: 'Micro_micro-se',
       source: bottomSliderFour,
       discount: '30%',
@@ -114,7 +116,7 @@ class SlidersData {
     },
     {
       id: 9,
-      href: 'https://gallo.pult.ru/strada_2#productPagePart',
+      href: `${this.baseUrl}strada_2#productPagePart`,
       alt: 'Micro_micro-se',
       source: bottomSliderFive,
       right: true,
@@ -123,7 +125,7 @@ class SlidersData {
     },
     {
       id: 10,
-      href: 'https://gallo.pult.ru/subwoofers#productPagePart',
+      href: `${this.baseUrl}subwoofers#productPagePart`,
       alt: 'Micro_micro-se',
       source: bottomSliderSix,
       discount: '30%',

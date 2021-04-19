@@ -11,34 +11,22 @@ SwiperCore.use([Autoplay, Pagination]);
 const Slider = ({ slidesList }) => {
 
   const slides = slidesList.map((slide) => {
-    const {
-      id,
-      href,
-      alt,
-      source,
-      whiteText,
-      blackText,
-      right,
-      discount,
-      footerTitle,
-      footerText
-    } = slide;
+    const { id, href, alt, source, whiteText, blackText, right, discount, footerTitle, footerText } = slide;
 
     const getSlideText = () => {
-      if (right) {
-        return (
-          <p className="slider__text slider__text--right  slider__text--discount">
-            скидки до <br />
-            <span className="slider__text--discount-b">{discount}</span>
-          </p>
-        )
-      }
 
       if (discount) {
+        let slideText = 'slider__text  slider__text--discount';
+        if(right) {
+          slideText += ' slider__text--right'
+        }
+
         return (
-          <p className="slider__text  slider__text--discount">
-            скидки до <br/>
-            <span className="slider__text--discount-b">{discount}</span>
+          <p className={slideText}>
+            скидки до <br />
+            <span className="slider__text--discount-b">
+              {discount}
+            </span>
           </p>
         )
       }
@@ -53,11 +41,7 @@ const Slider = ({ slidesList }) => {
 
     return (
       <SwiperSlide key={id}>
-        <a
-          className=" slider__link link"
-          href={href}
-          target=""
-        >
+        <a className=" slider__link link" href={href} target="" >
           <div className="slider__baner">
             <img
               alt={alt}

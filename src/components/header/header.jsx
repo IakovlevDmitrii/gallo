@@ -1,7 +1,7 @@
 import React from 'react';
 
-import galloAcousticsImage from './Gallo_Acoustics.svg';
-import logoPultImage from './logo_pult.svg';
+import galloAcousticsImage from './images/Gallo_Acoustics.svg';
+import logoPultImage from './images/logo_pult.svg';
 
 import './header.css';
 
