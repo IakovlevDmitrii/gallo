@@ -1,21 +1,29 @@
 import React from 'react';
 
 import Header from '../header';
-import Main from '../main';
+import Slider from '../slider';
 import Menu from '../menu';
 import Footer from '../footer';
 
+import slidersData from '../../services/sliders-data/sliders-data';
+
 import './app.css';
 
-function App() {
+const App = () => {
+  const topSliderSlides = slidersData.getTopSliderData();
+  const bottomSliderSlides = slidersData.getBottomSliderData();
+
   return (
-     <div className='app'>
-        <Header/>
-        <Main/>
-        <Menu/>
-        <Footer/>
-     </div>
+    <>
+      <Header/>
+      <div className='main'>
+        <Slider slidesList={topSliderSlides} />
+        <Slider slidesList={bottomSliderSlides} />
+      </div>
+      <Menu/>
+      <Footer/>
+    </>
   )
-}
+};
 
 export default App;

@@ -2,25 +2,23 @@
     padding: 20px 0;
 }
 
-.wrapper {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 0 24px;
-}
-
-@media (max-width: 1279px) {
-    .wrapper {
-        padding: 0 24px;
-    }
-}
-
 .header__wrapper {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+}
+
+.header__img {
+    max-height: 50px;
+}
+
+.header__img--pult {
+    max-height: 30px;
 }

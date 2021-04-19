@@ -1,0 +1,209 @@
+
+.footer {
+    margin-top: 220px;
+    margin-bottom: 40px;
+}
+
+.footer__blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    width: 50%;
+}
+
+.footer__columns {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.footer__column:last-child {
+    position: relative;
+}
+
+.footer__column:last-child .footer__link {
+    position: relative;
+    white-space: nowrap;
+    padding-right: 12px;
+}
+
+.footer__column:last-child .footer__link::before,
+.footer__column:last-child .footer__link::after {
+    right: 0;
+}
+
+.footer__column:last-child .footer__link::before {
+    content: "";
+    position: absolute;
+    -webkit-transform: translate(-10%, 25%);
+    -ms-transform: translate(-10%, 25%);
+    transform: translate(-10%, 25%);
+    width: 6px;
+    height: 6px;
+    border-right: 1px solid #0e0e0e;
+    border-top: 1px solid #0e0e0e;
+}
+
+.footer__column:last-child .footer__link::after {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotate(45deg) translate(-250%, 35%);
+    -ms-transform: rotate(45deg) translate(-250%, 35%);
+    transform: rotate(45deg) translate(-250%, 35%);
+    width: 1px;
+    height: 10px;
+    background: #0e0e0e;
+}
+.footer__logo {
+    width: 106px;
+    padding-right: 20px;
+}
+
+.footer__logo-img {
+    width: 100%;
+}
+
+.footer__call {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.footer__tel {
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+}
+
+.footer__tel:hover,
+.footer__tel:active {
+    text-decoration: underline;
+}
+
+.footer__call-text {
+    margin-bottom: 1px;
+    font-size: 12px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.footer__list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer__link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    padding-right: 8px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
+}
+
+.footer__link:hover,
+.footer__link:active {
+    color: #4cc7e9;
+    -webkit-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+}
+
+.footer__copyright {
+    margin-top: 80px;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+@media (max-width: 1279px) {
+    .footer {
+        margin-top: 120px;
+    }
+
+    .footer__block {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .footer__call {
+        margin-top: 10px;
+    }
+
+    .footer__call-text {
+        margin-top: 10px;
+    }
+
+    .footer__link {
+        font-size: 12px;
+    }
+
+    .footer__copyright {
+        margin-top: 40px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .footer {
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    .footer__blocks {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .footer__block {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .footer__columns {
+        width: 100%;
+    }
+
+    .footer__copyright {
+        margin-top: 20px;
+    }
+}
