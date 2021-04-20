@@ -23,6 +23,53 @@
     height: 100%;
 }
 
+.widget {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
+    font-family: gilroy-semibold, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1d9cd8;
+}
+
+.widget__item {
+    cursor: pointer;
+    -webkit-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    padding: 10px 0;
+}
+
+.widget__item.active {
+    -webkit-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+    color: black;
+}
+
+.widget__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.widget__link:hover {
+    color: black;
+}
+
 .menu__img {
     width: 100%;
     height: 100%;
@@ -40,5 +87,18 @@
 
     .menu__col:nth-child(2) {
         display: none;
+    }
+
+    .widget {
+        font-size: 14px;
+    }
+
+    .widget__item {
+        padding: 8px 0;
+    }
+
+    .widget__item {
+        -ms-flex-item-align: center;
+        align-self: center;
     }
 }

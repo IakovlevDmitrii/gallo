@@ -9,26 +9,22 @@ import './slider.css';
 SwiperCore.use([Autoplay, Pagination]);
 
 const Slider = ({ slidesList }) => {
-
   const slides = slidesList.map((slide) => {
     const { id, href, alt, source, whiteText, blackText, right, discount, footerTitle, footerText } = slide;
 
     const getSlideText = () => {
-
       if (discount) {
         let slideText = 'slider__text  slider__text--discount';
-        if(right) {
-          slideText += ' slider__text--right'
+        if (right) {
+          slideText += ' slider__text--right';
         }
 
         return (
           <p className={slideText}>
             скидки до <br />
-            <span className="slider__text--discount-b">
-              {discount}
-            </span>
+            <span className="slider__text--discount-b">{discount}</span>
           </p>
-        )
+        );
       }
 
       return (
@@ -36,18 +32,14 @@ const Slider = ({ slidesList }) => {
           <span className="slider__text--white">{whiteText}</span>
           <span className="slider__text--black">{blackText}</span>
         </p>
-      )
+      );
     };
 
     return (
       <SwiperSlide key={id}>
-        <a className=" slider__link link" href={href} target="" >
+        <a className=" slider__link link" href={href} target="">
           <div className="slider__baner">
-            <img
-              alt={alt}
-              className="slider__img swiper-lazy swiper-lazy-loaded"
-              src={source}
-            />
+            <img alt={alt} className="slider__img swiper-lazy swiper-lazy-loaded" src={source} />
             {getSlideText()}
           </div>
           <div className="slider__footer">
@@ -60,8 +52,8 @@ const Slider = ({ slidesList }) => {
   });
 
   return (
-    <div className='slider'>
-      <div className='wrapper'>
+    <div className="slider">
+      <div className="wrapper">
         <Swiper
           autoplay={{ delay: 5000, disableOnInteraction: false }}
           loop

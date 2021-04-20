@@ -43,7 +43,6 @@ ul[class] {
 }
 
 a:not([class]) {
-    -webkit-text-decoration-skip: ink;
     text-decoration-skip-ink: auto;
 }
 
@@ -75,13 +74,11 @@ textarea {
 }
 
 *::-moz-selection {
-    color: #0e0e0e;
     color: white;
     background: #8ecae4;
 }
 
 *::selection {
-    color: #0e0e0e;
     color: white;
     background: #8ecae4;
 }
@@ -96,49 +93,6 @@ textarea {
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
-}
-
-.widget {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    height: 100%;
-    font-family: gilroy-semibold, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
-    "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 20px;
-    line-height: 100%;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #1d9cd8;
-}
-
-.widget__link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.widget__item {
-    cursor: pointer;
-    -webkit-transition: color 0.5s ease;
-    -o-transition: color 0.5s ease;
-    transition: color 0.5s ease;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-    padding: 10px 0;
-}
-
-.widget__item.active {
-    -webkit-transition: color 0.5s ease;
-    -o-transition: color 0.5s ease;
-    transition: color 0.5s ease;
-    color: black;
 }
 
 .product {
@@ -226,7 +180,7 @@ textarea {
     -ms-flex-align: center;
     align-items: center;
     height: 70px;
-    padding: 0px 60px;
+    padding: 0 60px;
     font-family: Gilroy-Semibold, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
     "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 20px;
@@ -264,7 +218,6 @@ textarea {
 .product__price--before {
     font-size: 20px;
     line-height: 100%;
-    -webkit-text-decoration-line: line-through;
     text-decoration-line: line-through;
     color: #0e0e0e;
 }
@@ -334,19 +287,6 @@ textarea {
         padding: 0 24px;
     }
 
-    .widget {
-        font-size: 14px;
-    }
-
-    .widget__item {
-        padding: 8px 0;
-    }
-
-    .widget__item {
-        -ms-flex-item-align: center;
-        align-self: center;
-    }
-
     .product__img {
         max-height: 350px;
     }
@@ -368,7 +308,7 @@ textarea {
     .product__btn {
         height: 48px;
         font-size: 14px;
-        padding: 0px 42px;
+        padding: 0 42px;
     }
 
     .product__price--before {
@@ -388,7 +328,7 @@ textarea {
     }
 
     .product__prices {
-        padding-right: 0px;
+        padding-right: 0;
     }
 }
 
@@ -436,7 +376,7 @@ textarea {
 
     .product__content {
         width: 100%;
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .product__title {
@@ -450,7 +390,7 @@ textarea {
     .product__btn {
         height: 48px;
         font-size: 14px;
-        padding: 0px 32px;
+        padding: 0 32px;
     }
 
     .product__color {
