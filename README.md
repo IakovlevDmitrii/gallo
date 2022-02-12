@@ -1,25 +1,31 @@
-Тестовое задание для компании PULT.RU интернет-магазин https://www.pult.ru/
+# Тестовое задание
 
-Задание: реализовать свою версию страницы https://gallo.pult.ru
+---
+для компании [PULT.RU](https://www.pult.ru/)
 
-Решение можно посмотреть здесь:
-https://gallo.vercel.app/
+### Задание:
+реализовать свою версию [этой страницы](https://gallo.pult.ru) 
 
-Инструменты:
+### Инструменты:
 
-React
+> - HTML5
+> - CSS3
+> - JS
+> - React
+> - PropTypes
+> - [Swiper](https://swiperjs.com/)
+>
+> #### Webpack
+> > - Babel
+> > - ESLint
+> > - Prettier
+> > - Husky
 
-swiper
-https://swiperjs.com/
+### Решение можно посмотреть [здесь](https://gallo.vercel.app/)
 
-prop-types
+---
+_Создан_:  
+Apr 17, 2021
 
-babel
-
-eslint
-
-lint-staged
-
-prettier
-
-husky
+_Последние изменения_:  
+Feb 13, 2022
